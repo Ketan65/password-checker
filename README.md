@@ -28,11 +28,15 @@ A professional password strength analysis tool built in Python, featuring a **Bl
 git clone https://github.com/Ketan65/password-checker.git
 cd password-checker
 ```
-
 ### Step 2 — Install dependencies
 ```bash
+# Windows PowerShell mein:
+python -m pip install -r requirements.txt
+
+# Normal terminal mein:
 pip install -r requirements.txt
 ```
+
 
 ### Step 3 — Download Bloom Filter
 Download the pre-built bloom filter (trained on 14M passwords):
