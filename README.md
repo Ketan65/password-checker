@@ -21,30 +21,31 @@ A professional password strength analysis tool built in Python, featuring a **Bl
 ## 📁 Project Structure
 
 
-
 ## ⚙️ Installation
 
+### Step 1 — Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/Ketan65/password-checker.git
 cd password-checker
-
-# Install dependencies
-pip install pybloom-live
-
-# Build Bloom Filter (requires rockyou.txt)
-python build_bloom.py
 ```
+
+### Step 2 — Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3 — Download Bloom Filter
+Download the pre-built bloom filter (trained on 14M passwords):
+
+👉 [Download bloom_filter.pkl](https://drive.google.com/file/d/14o29HLjpKBXeRnoT0Pwux_mHsXpWeN-c/view?usp=sharing)
+
+Place the downloaded file inside the `core/` folder:
 
 ## 🚀 Usage
 
 ### CLI
 ```bash
-cd core
-python
-from checker import load_bloom, analyze
-bloom = load_bloom()
-results = analyze("YourPassword@123", bloom)
+python cli.py
 ```
 
 ### GUI
