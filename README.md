@@ -80,6 +80,11 @@ cd password-checker
 
 #### Step 2 — Install dependencies
 ```bash
+# Virtual environment banao
+python3 -m venv venv
+source venv/bin/activate
+
+# Dependencies install karo
 pip install -r requirements.txt
 
 # Tkinter (if not installed)
